@@ -1,7 +1,7 @@
-# **2025-OBJPROG-LAB016**
+# **2025-OBJPROG-LAB017**
 Week 05 - Methods in Java
 
-Laboratory # 16 - Guided Coding Exercise 5: Method Overloading
+Laboratory # 17 - Group Activity # 01 - Problem 01: Enhanced Grade Calculator with Method Decomposition
 
 ## **Instructions**
 
@@ -77,102 +77,65 @@ Only perform this if this is the first time you will setup your Git Environment
 
 ### **Step 3: Complete the Assignment**
 
-**Laboratory # 16 - Guided Coding Exercise 5: Method Overloading**
+**Laboratory # 17 - Group Activity # 01 - Problem 01: Enhanced Grade Calculator with Method Decomposition**
 
    **Objective:**
-   - Define and use method overloading to write cleaner and more modular code.
-   - Understand that methods with the same name can coexist if they have different parameter lists.
+   - Implement a program that calculates a student's grade based on their numerical score.
+   - Practice method decomposition by breaking down the program into smaller, reusable methods.
+   - Apply conditional statements (if-else if-else) for decision-making.
 
    **File Naming Convention:**
-   - `MethodOverloading.java`
+   - `GradeCalculator.java`
 
    **Desired Output:**
    ```txt
-   Integer value: 10
-   Double value: 3.14
-   String value: Hello!
+   Enter your score: 85
+   Your Grade is: B
    ```
 
-   **Notable Observations (to be discussed after completing the exercise):**
-   - You have defined three methods with the same name (printValue) but with different parameter lists. This is method overloading.
-   - The Java compiler determines which method to call based on the type of the argument you provide.
+   **Notable Observations:**
+   - This activity emphasizes the importance of breaking down a problem into smaller, reusable components (methods).
+   - Using methods makes your code more organized, readable, and easier to maintain.
 
    **Java Programming Best Practices:**
-   - Use method overloading when you have methods that perform similar tasks but operate on different data types or a different number of inputs.
-   - Ensure that the overloaded methods have distinct parameter lists so the compiler can differentiate between them.
+   - Use meaningful method names that clearly describe their purpose.
+   - Keep your methods concise and focused on a single task.
+   - Add comments to your code to explain the logic and purpose of each method.
+   - Validate user input to prevent unexpected errors.
       
-   **Step-by-Step Instructions:**
+   **Method Requirements:**
 
-   1. Setup Class and Main Method
-      - Create a file named `MethodOverloading.java`.
-      - Define the class `MethodOverloading` and the `main` method.
-      ```Java      
-      public class MethodOverloading {
-          public static void main(String[] args) {
-      
-          }
-      }
-      ```
+   1. getStudentScore()
+      - Purpose: To get the student's score from the user.
+      - Requirements:
+         - Prompt the user to enter their score.
+         - Read the user's input from the console.
+         - Validate the input to ensure it is a valid number (optional, but recommended).
+         - Return the entered score as an integer or floating-point number.
             
-   2. Create the First printValue Method
-      - After the closing brace of main, type public static void printValue(int number) {}
-      - Inside this method, add: System.out.println("Integer value: " + number);
-      ```Java
-      public class MethodOverloading {
-          //... (main method)...
-          public static void printValue(int number) {
-              System.out.println("Integer value: " + number);
-          }
-      }
-      ```
+   2. calculateGrade(score)
+      - Purpose: To determine the letter grade corresponding to the given score.
+      - Requirements:
+         - Take the numerical score as a parameter.
+         - Use conditional statements (if, else if, else) to check the score against the grading scale:
+            - 90 and above: 'A'
+            - 80-89: 'B'
+            - 70-79: 'C'
+            - 60-69: 'D'
+            - Below 60: 'F'
+         - Return the calculated letter grade as a String.
 
-   3. Create the Second printValue Method
-      - After the first printValue method, type public static void printValue(double number) {}
-      - Inside this method, add: System.out.println("Double value: " + number);
-      ```Java
-      public class MethodOverloading {
-          //... (main and first printValue methods)...
-          public static void printValue(double number) {
-              System.out.println("Double value: " + number);
-          }
-      }
-      ```
-
-   4. Create the Third printValue Method
-      - After the second printValue method, type public static void printValue(String text) {}
-      - Inside this method, add: System.out.println("String value: " + text);
-      ```Java
-      public class MethodOverloading {
-          //... (main and other printValue methods)...
-          public static void printValue(String text) {
-              System.out.println("String value: " + text);
-          }
-      }
-      ```
-
-   5. Call the printValue Methods
-      - In main, add these lines:
-         - printValue(10);
-         - printValue(3.14);
-         - printValue("Hello!");
-      ```Java
-      public class MethodOverloading {
-          public static void main(String args) {
-              printValue(10);
-              printValue(3.14);
-              printValue("Hello!");
-          }
-          //... (printValue methods)...
-      }
-      ```
-
-   6. Compile and Run
-       - Save the file as `MethodOverloading.java`.
-       - Compile the code using `javac MethodOverloading.java` in your terminal or command prompt.
-       - Run the compiled code using `java MethodOverloading`.
+   3. Main Program Flow
+      - Call the getStudentScore() method to get the student's score.
+      - Pass the returned score to the calculateGrade() method to determine the grade.
+      - Display the calculated grade to the user.
 
    **Conclusion**
-   This exercise demonstrated the concept of method overloading in Java. Method overloading allows you to create multiple methods with the same name, as long as they have different parameter lists. This can make your code more concise, readable, and organized, especially when dealing with similar operations on different data types.
+   By completing this coding challenge, you will gain experience in:
+      - Designing and implementing methods in Java.
+      - Using conditional statements for decision-making.
+      - Handling user input.
+      - Following Java programming best practices for clean and maintainable code.
 
 ### **Step 4: Push Changes to GitHub**
 Once you've completed your changes, follow these steps to upload your work to your GitHub repository.
@@ -196,7 +159,7 @@ Once you've completed your changes, follow these steps to upload your work to yo
    Write a meaningful commit message:
    
    ```bash
-   git commit -m "Submitting OBJPROG Week 05 - Laboratory # 16"
+   git commit -m "Submitting OBJPROG Week 05 - Laboratory # 17"
    ```
    
 4. Push your changes to GitHub:
