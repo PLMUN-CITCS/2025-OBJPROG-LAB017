@@ -1,3 +1,1 @@
-Integer value: 10
-Double value: 3.14
-String value: Hello!
+Enter your score: Your Grade is: F
